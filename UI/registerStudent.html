@@ -33,30 +33,35 @@
         <div class="my-form">
           <h3 class="text-center mb">Record Student</h3>
           <hr />
-          <form>
+          <div class="errors" id="backend"></div>
+          <form id="register-student">
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" name="name" id="name" class="form-control" />
+              <div class="errors" id="nameErrors"></div>
             </div>
             <div class="form-group">
               <label for="reg">Registration Number</label>
               <input type="text" name="reg" id="reg" class="form-control" />
+              <div class="errors" id="regErrors"></div>
             </div>
             <div class="form-group">
               <label for="level">Level</label>
               <select name="level" id="level">
-                <option value="">One</option>
-                <option value="">Two</option>
-                <option value="">Three</option>
+                <option value="one">One</option>
+                <option value="two">Two</option>
+                <option value="three">Three</option>
               </select>
+              <div class="errors" id="levelErrors"></div>
             </div>
             <div class="form-group">
               <label for="dept">Department</label>
               <select name="dept" id="dept">
-                <option value="">BCS</option>
-                <option value="">BIT</option>
-                <option value="">BBIT</option>
+                <option value="bcs">BCS</option>
+                <option value="bit">BIT</option>
+                <option value="bbit">BBIT</option>
               </select>
+              <div class="errors" id="deptErrors"></div>
             </div>
             <button type="submit" class="mt">Record</button>
           </form>
@@ -68,6 +73,8 @@
         <p class="copyright"></p>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/registerStudent.js"></script>
   </body>
 </html>

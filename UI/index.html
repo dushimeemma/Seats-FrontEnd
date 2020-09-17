@@ -30,7 +30,7 @@
         <div class="my-form">
           <h3 class="text-center mb">View Seats</h3>
           <hr />
-          <form>
+          <form id="view-seat">
             <div class="form-group">
               <label for="viewseat">Registration Number</label>
               <input type="text" name="reg" id="reg" class="form-control" />
@@ -39,17 +39,7 @@
           </form>
         </div>
         <div class="badge mb">
-          <ul>
-            <li>Name : Dushime Emmanuel</li>
-            <hr />
-            <li>Reg No : D/BCS/17/09/6177</li>
-            <hr />
-            <li>Exam : JavaScript</li>
-            <hr />
-            <li>Room : MUHABURA</li>
-            <hr />
-            <li>Seat: 001</li>
-          </ul>
+          <ul id="seat-details"></ul>
         </div>
       </div>
     </main>
@@ -58,6 +48,7 @@
         <p class="copyright"></p>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/viewSeat.js"></script>
   </body>

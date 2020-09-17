@@ -14,6 +14,15 @@
   --inverse: #292b2c;
   --faded: #f7f7f7;
 }
+.success {
+  color: var(--success);
+}
+.danger {
+  color: var(--danger);
+}
+.capitalize {
+  text-transform: capitalize;
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-size: medium;
@@ -23,6 +32,11 @@ body {
 .container {
   width: 80%;
   margin: auto;
+}
+.errors {
+  display: none;
+  width: 100%;
+  color: var(--danger);
 }
 ul {
   list-style: none;

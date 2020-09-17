@@ -21,14 +21,14 @@
         <div class="navbrand">
           <a href="index.html">EXAM SEATS ARRANGEMENT</a>
         </div>
-        <nav>
-          <ul>
+        <nav id="nav">
+          <!-- <ul>
             <li>
               Welcome
               <a href="register.html" class="underline">Dushime Emmanuel</a>
             </li>
             <li><a href="login.html" class="underline">Logout</a></li>
-          </ul>
+          </ul> -->
         </nav>
       </div>
     </header>
@@ -46,20 +46,23 @@
       <aside>
         <div class="container mt">
           <div class="count">
-            <span> <strong class="number">5 </strong>Students BCS-L-1</span>
+            <span>
+              <strong class="number" id="bcs-student"></strong>Students
+              BCS-L-1</span
+            >
             <span> <strong class="number">5 </strong>Students BCS-L-2</span>
             <span> <strong class="number">5 </strong>Students BCS-L-3</span>
           </div>
           <h3 class="text-center">All Students</h3>
 
-          <table class="mt">
+          <table class="mt" id="bcs-table">
             <tr>
               <th>#</th>
               <th>Reg No</th>
               <th>Attandance</th>
               <th>Action</th>
             </tr>
-            <tr>
+            <!--  <tr>
               <td>1</td>
               <td>D/BCS/17/09/6177</td>
               <td>True</td>
@@ -85,7 +88,7 @@
                 <button><i class="fas fa-trash-alt"></i></button
                 ><button><i class="fas fa-pencil-alt"></i></button>
               </td>
-            </tr>
+            </tr> -->
           </table>
         </div>
       </aside>
@@ -95,6 +98,8 @@
         <p class="copyright"></p>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/hod.js"></script>
   </body>
 </html>
